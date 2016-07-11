@@ -1,0 +1,8 @@
+image: maven:3.3.3-jdk-8
+before_install:
+  - bash install_deps.sh
+build:
+  script: "mvn install -B"
+jdk:
+  - oraclejdk7
+  - oraclejdk8
